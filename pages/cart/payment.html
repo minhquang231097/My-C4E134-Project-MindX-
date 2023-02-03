@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trang thanh toán | The Aichi Coffee</title>
+        <link rel="stylesheet" href="payment.css" />
+        <script
+            src="https://kit.fontawesome.com/9a6d25af5b.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-meta-list">
+                <div class="header-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span
+                        >Đối diện VNPT đường Nguyễn Văn Huyên kéo dài, Tây Hồ,
+                        Hà Nội</span
+                    >
+                </div>
+                <div class="header-phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Hotline: 0938 051 369</span>
+                </div>
+                <div class="header-user">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="user">Đăng nhập</span>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="header-logo">
+                    <img src="..\..\img\logo.jpg" />
+                    <p><a href="../../index.html">The Aichi Coffee</a></p>
+                </div>
+                <div class="header-menu">
+                    <button class="dropbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="../item-collection/coffee.html">Cà phê</a>
+                        </li>
+                        <li>
+                            <a href="../item-collection/tea.html">Trà</a>
+                        </li>
+                        <li class="dropdown">
+                            <div class="dropdown-btn">
+                                <a href="../menu.html"
+                                    >Menu<i class="fa fa-caret-down"></i
+                                ></a>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="../item-collection/coffee.html"
+                                    >Cà phê</a
+                                >
+                                <a href="../item-collection/tea.html">Trà</a>
+                                <a href="../item-collection/juice.html"
+                                    >Nước ép/Sinh tố/Đá xay</a
+                                >
+                                <a href="../item-collection/others.html"
+                                    >Khác</a
+                                >
+                            </div>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Cửa hàng</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li>
+                            <a href="./payment.html"
+                                ><i class="fa-solid fa-cart-shopping"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="checkout_page">
+                <div id="checkout_form">
+                    <h1>THÔNG TIN GIAO HÀNG</h1>
+                    <form>
+                        <input
+                            data-value="name"
+                            type="text"
+                            placeholder="* Họ và tên"
+                            required
+                        />
+                        <input
+                            data-value="email"
+                            type="text"
+                            placeholder="Email"
+                        />
+                        <input
+                            data-value="phone"
+                            type="text"
+                            placeholder="* Số điện thoại"
+                            required
+                        />
+                        <select data-value="area">
+                            <option selected value="none" hidden>
+                                * Khu vực
+                            </option>
+                            <option value="0">Miền Bắc</option>
+                            <option value="1">Miền Nam</option>
+                        </select>
+                        <input
+                            data-value="address"
+                            type="text"
+                            placeholder="* Địa chỉ"
+                            required
+                        />
+                    </form>
+                    <small style="color: gray">(*) không được để trống</small>
+                </div>
+                <div id="checkout_pay">
+                    <h1>PHƯƠNG THỨC THANH TOÁN</h1>
+                    <form>
+                        <span>
+                            <input
+                                id="card_payment"
+                                type="radio"
+                                value="card"
+                                name="pay"
+                            />
+                            <span><i class="fa-brands fa-cc-visa"></i></span>
+                            <label for="card_payment"
+                                >Thanh toán qua thẻ (ATM/Visa/MasterCard)</label
+                            >
+                        </span>
+                        <span>
+                            <input
+                                id="cod_payment"
+                                type="radio"
+                                value="cod"
+                                name="pay"
+                            />
+                            <span><i class="fa-solid fa-truck"></i></span>
+                            <label for="cod_payment">Thanh toán COD</label>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div id="checkout_cart">
+                <ul id="cart_items"></ul>
+                <div id="coupon">
+                    <input
+                        data-value="coupon"
+                        type="text"
+                        placeholder="Mã giảm giá..."
+                    />
+                    <button>Áp dụng</button>
+                </div>
+                <div class="total_cart">
+                    <p>Tổng:</p>
+                    <strong data-amount="purchase"></strong>
+                </div>
+                <div class="total_cart">
+                    <small>Ưu đãi:</small>
+                    <small data-amount="discount"
+                        >-0
+                        <span>đ</span>
+                    </small>
+                </div>
+                <div class="total_cart">
+                    <small>Phí ship:</small>
+                    <small data-amount="shipping"
+                        >0
+                        <span>đ</span>
+                    </small>
+                </div>
+                <div class="total_cart">
+                    <p>Thành tiền:</p>
+                    <strong data-amount="total"
+                        >0
+                        <span>đ</span>
+                    </strong>
+                </div>
+                <button id="buy_btn">HOÀN TẤT ĐƠN HÀNG</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-info">
+                <h2>The Aichi Coffee</h2>
+                <p>
+                    Đối diện VNPT đường Nguyễn Văn Huyên
+                    <br />
+                    kéo dài, Tây Hồ, Hà Nội
+                </p>
+            </div>
+            <div class="footer-menu">
+                <h2>Menu</h2>
+                <a href="../item-collection/coffee.html">Cà phê</a>
+                <a href="../item-collection/tea.html">Trà</a>
+                <a href="../item-collection/juice.html"
+                    >Nước ép/Sinh tố/Đá xay</a
+                >
+                <a href="../item-collection/others.html">Sản phẩm khác</a>
+            </div>
+            <div class="footer-contact">
+                <h2>Liên hệ</h2>
+                <div>
+                    <a href="https://www.facebook.com/Aichicoffee"
+                        ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+        <script src="user.js"></script>
+        <script src="../storage.js"></script>
+        <script src="payment.js"></script>
+    </body>
+</html>

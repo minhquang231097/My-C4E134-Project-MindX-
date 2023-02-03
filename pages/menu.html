@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./menu.css" />
+        <link rel="stylesheet" href="./item-collection/coffee.css" />
+        <link rel="stylesheet" href="./item-collection/tea.css" />
+        <link rel="stylesheet" href="./item-collection/juice.css" />
+        <link rel="stylesheet" href="./item-collection/others.css" />
+        <title>Menu | The Aichi Coffee</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-meta-list">
+                <div class="header-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span
+                        >Đối diện VNPT đường Nguyễn Văn Huyên kéo dài, Tây Hồ,
+                        Hà Nội</span
+                    >
+                </div>
+                <div class="header-phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Hotline: 0938 051 369</span>
+                </div>
+                <div class="header-user">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="user">Đăng nhập</span>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="header-logo">
+                    <img src="..\img\logo.jpg" />
+                    <p><a href="../index.html">The Aichi Coffee</a></p>
+                </div>
+                <div class="header-menu">
+                    <button class="dropbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="./item-collection/coffee.html">Cà phê</a>
+                        </li>
+                        <li>
+                            <a href="./item-collection/tea.html">Trà</a>
+                        </li>
+                        <li class="dropdown">
+                            <div class="dropdown-btn">
+                                <a href="./menu.html"
+                                    >Menu<i class="fa fa-caret-down"></i
+                                ></a>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="./item-collection/coffee.html"
+                                    >Cà phê</a
+                                >
+                                <a href="./item-collection/tea.html">Trà</a>
+                                <a href="./item-collection/juice.html"
+                                    >Nước ép/Sinh tố/Đá xay</a
+                                >
+                                <a href="./item-collection/others.html">Khác</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Cửa hàng</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li id="cart">
+                            <a href="./cart/payment.html"
+                                ><i class="fa-solid fa-cart-shopping"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu-collection">
+            <div class="menu-container">
+                <div class="left">
+                    <h3>Danh mục sản phẩm</h3>
+                    <ul class="list-collection">
+                        <li>
+                            <a href="./menu.html">Tất cả</a>
+                        </li>
+                        <li>
+                            <a href="./item-collection/coffee.html">Cà phê</a>
+                        </li>
+                        <li>
+                            <a href="./item-collection/tea.html">Trà</a>
+                        </li>
+                        <li>
+                            <a href="./item-collection/juice.html"
+                                >Nước ép/Sinh tố/Đá xay</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./item-collection/others.html">Khác</a>
+                        </li>
+                    </ul>
+                    <div class="select-input">
+                        <select id="menu-list" name="section">
+                            <option value="all" id="all" selected>
+                                Tất cả
+                            </option>
+                            <option value="coffee" id="coffee">Cà phê</option>
+                            <option value="tea" id="tea">Trà</option>
+                            <option value="juice" id="juice">
+                                Nước ép/Sinh tố/Đá xay
+                            </option>
+                            <option value="others" id="others">Khác</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="coffee-list">
+                        <h2>Cà phê</h2>
+                        <div class="parent-1">
+                            <div class="div1-1">
+                                <img
+                                    src="..\img\ca_phe_den.webp"
+                                    alt="Cà phê đen"
+                                />
+                                <p><b>Cà phê đen</b></p>
+                                <span>35.000 đ</span>
+                            </div>
+                            <div class="div2-1">
+                                <img
+                                    src="..\img\ca-phe-nau.jpg"
+                                    alt="Cà phê nâu"
+                                />
+                                <p><b>Cà phê nâu</b></p>
+                                <span>38.000 đ</span>
+                            </div>
+                            <div class="div3-1">
+                                <img
+                                    src="..\img\cafe-cot-dua.png"
+                                    alt="Cà phê cốt dừa"
+                                />
+                                <p><b>Cà phê cốt dừa</b></p>
+                                <span>45.000 đ</span>
+                            </div>
+                            <div class="div4-1">
+                                <img
+                                    src="..\img\caramel-macchiato.jpg"
+                                    alt="Caramel Machiato"
+                                />
+                                <p><b>Caramel Machiato</b></p>
+                                <span>50.000 đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="tea-list">
+                        <h2>Trà</h2>
+                        <div class="parent-2">
+                            <div class="div1-2">
+                                <img
+                                    src="..\img\tra-olong-sua.jpg"
+                                    alt="Ô Long sữa"
+                                />
+                                <p><b>Ô long sữa</b></p>
+                                <span>40.000 đ</span>
+                            </div>
+                            <div class="div2-2">
+                                <img
+                                    src="..\img\tra-sua-hoa-nhai.png"
+                                    alt="Trà nhài sữa"
+                                />
+                                <p><b>Trà nhài sữa</b></p>
+                                <span>40.000 đ</span>
+                            </div>
+                            <div class="div3-2">
+                                <img
+                                    src="..\img\hong-tra-sua-tran-chau.webp"
+                                    alt="Hồng trà sữa"
+                                />
+                                <p><b>Hồng trà sữa</b></p>
+                                <span>40.000 đ</span>
+                            </div>
+                            <div class="div4-2">
+                                <img
+                                    src="..\img\tra-cam-que.jpg"
+                                    alt="Trà cam quế"
+                                />
+                                <p><b>Trà cam quế</b></p>
+                                <span>45.000 đ</span>
+                            </div>
+                            <div class="div5-2">
+                                <img
+                                    src="..\img\tra-gung-thao-moc.jpg"
+                                    alt="Trà gừng thảo mộc"
+                                />
+                                <p><b>Trà gừng thảo mộc</b></p>
+                                <span>45.000 đ</span>
+                            </div>
+                            <div class="div6-2">
+                                <img
+                                    src="..\img\Tra-dau-chanh-vang.jpg"
+                                    alt="Trà dâu chanh vàng"
+                                />
+                                <p><b>Trà dâu chanh vàng</b></p>
+                                <span>50.000 đ</span>
+                            </div>
+                            <div class="div7-2">
+                                <img
+                                    src="..\img\tra-dao-cam-sa.jpg"
+                                    alt="Trà đào cam sả"
+                                />
+                                <p><b>Trà đào cam sả</b></p>
+                                <span>50.000 đ</span>
+                            </div>
+                            <div class="div8-2">
+                                <img
+                                    src="..\img\tra-sen-vang.jpg"
+                                    alt="Trà sen vàng"
+                                />
+                                <p><b>Trà sen vàng</b></p>
+                                <span>50.000 đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="juice-list">
+                        <h2>Nước ép/Sinh tố/Đá xay</h2>
+                        <div class="parent-3">
+                            <div class="div1-3">
+                                <img
+                                    src="..\img\nuoc-ep-chanh-xanh.jpg"
+                                    alt="Chanh xanh"
+                                />
+                                <p><b>Chanh xanh</b></p>
+                                <span>35.000 đ</span>
+                            </div>
+                            <div class="div2-3">
+                                <img
+                                    src="..\img\chanh-vang-mat-ong.jpg"
+                                    alt="Chanh vàng mật ong"
+                                />
+                                <p><b>Chanh vàng mật ong</b></p>
+                                <span>45.000 đ</span>
+                            </div>
+                            <div class="div3-3">
+                                <img src="..\img\sinh-to-oi.webp" alt="Ổi" />
+                                <p><b>Ổi</b></p>
+                                <span>50.000 đ</span>
+                            </div>
+                            <div class="div4-3">
+                                <img src="..\img\cam-dua.jpg" alt="Cam/Dứa" />
+                                <p><b>Cam/Dứa</b></p>
+                                <span>50.000 đ</span>
+                            </div>
+                            <div class="div5-3">
+                                <img
+                                    src="..\img\sua-chua-danh-da.webp"
+                                    alt="Sữa chua đanh đá"
+                                />
+                                <p><b>Sữa chua đanh đá</b></p>
+                                <span>35.000 đ</span>
+                            </div>
+                            <div class="div6-3">
+                                <img
+                                    src="..\img\sinh-to-viet-quat.jpg"
+                                    alt="Sữa chua việt quất"
+                                />
+                                <p><b>Sữa chua việt quất</b></p>
+                                <span>50.000 đ</span>
+                            </div>
+                            <div class="div7-3">
+                                <img
+                                    src="..\img\sua-chua-dau-xoai.jpg"
+                                    alt="Sữa chua dâu xoài"
+                                />
+                                <p><b>Sữa chua dâu xoài</b></p>
+                                <span>50.000 đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="others-list">
+                        <h2>Khác</h2>
+                        <div class="parent-4">
+                            <div class="div1-4">
+                                <img
+                                    src="..\img\matcha-sua.jpg"
+                                    alt="Cacao/Matcha sữa"
+                                />
+                                <p><b>Cacao/Matcha Sữa</b></p>
+                                <span>50.000 đ</span>
+                            </div>
+                            <div class="div2-4">
+                                <img
+                                    src="..\img\kho-bo-ga.jpg"
+                                    alt="Khô bò/gà/heo"
+                                />
+                                <p><b>Khô bò/gà/heo</b></p>
+                                <span>30.000 đ</span>
+                            </div>
+                            <div class="div3-4">
+                                <img
+                                    src="..\img\hat-huong-duong.jpg"
+                                    alt="Hướng dương"
+                                />
+                                <p><b>Hướng dương</b></p>
+                                <span>15.000 đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-info">
+                <h2>The Aichi Coffee</h2>
+                <p style="font-size: 16px">
+                    Đối diện VNPT đường Nguyễn Văn Huyên
+                    <br />
+                    kéo dài, Tây Hồ, Hà Nội
+                </p>
+            </div>
+            <div class="footer-menu">
+                <h2>Menu</h2>
+                <a href="./item-collection/coffee.html">Cà phê</a>
+                <a href="./item-collection/tea.html">Trà</a>
+                <a href="./item-collection/juice.html"
+                    >Nước ép/Sinh tố/Đá xay</a
+                >
+                <a href="./item-collection/others.html">Sản phẩm khác</a>
+            </div>
+            <div class="footer-contact">
+                <h2>Liên hệ</h2>
+                <div>
+                    <a href="https://www.facebook.com/Aichicoffee"
+                        ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+        <script src="user.js"></script>
+        <script src="storage.js"></script>
+        <script src="menu.js"></script>
+    </body>
+</html>

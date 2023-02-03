@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="register.css" />
+        <title>Đăng ký | The Aichi Coffee</title>
+    </head>
+    <body>
+        <header>
+            <h3>The Aichi Coffee</h3>
+            <button id="home">Home</button>
+        </header>
+        <div class="container">
+            <form>
+                <h3>Đăng ký</h3>
+                <div class="row">
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Họ và tên"
+                    />
+                </div>
+                <div class="row">
+                    <input
+                        type="text"
+                        name="phonenumber"
+                        id="phonenumber"
+                        placeholder="Số điện thoại"
+                    />
+                </div>
+                <div class="row">
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                    />
+                </div>
+                <div class="row">
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Tên người dùng"
+                    />
+                </div>
+                <div class="row">
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Mật khẩu"
+                    />
+                </div>
+                <div class="row">
+                    <input
+                        type="password"
+                        name="password"
+                        id="confirm-password"
+                        placeholder="Nhập lại mật khẩu"
+                    />
+                </div>
+                <div class="row button">
+                    <button class="register" id="register">Đăng ký</button>
+                    <button class="cancel" id="cancel">Quay lại</button>
+                </div>
+            </form>
+        </div>
+        <script src="../storage.js"></script>
+        <script src="./register.js"></script>
+    </body>
+</html>

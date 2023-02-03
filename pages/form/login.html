@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./login.css" />
+        <title>Đăng nhập | The Aichi Coffee</title>
+    </head>
+    <body>
+        <header>
+            <h3>The Aichi Coffee</h3>
+            <button id="home">Home</button>
+        </header>
+        <div class="container">
+            <form>
+                <h3>Đăng nhập</h3>
+                <div class="row">
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Tên người dùng"
+                    />
+                </div>
+                <div class="row">
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Mật khẩu"
+                    />
+                </div>
+                <div class="row button">
+                    <button class="signin" id="signin">Đăng nhập</button>
+                    <button class="signup" id="signup">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+        <script src="../storage.js"></script>
+        <script src="./login.js"></script>
+    </body>
+</html>

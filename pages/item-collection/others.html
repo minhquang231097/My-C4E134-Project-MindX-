@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="../menu.css" />
+        <link rel="stylesheet" href="./others.css" />
+        <title>Cà phê | The Aichi Coffee</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-meta-list">
+                <div class="header-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span
+                        >Đối diện VNPT đường Nguyễn Văn Huyên kéo dài, Tây Hồ,
+                        Hà Nội</span
+                    >
+                </div>
+                <div class="header-phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Hotline: 0938 051 369</span>
+                </div>
+                <div class="header-user">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="user">Đăng nhập</span>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="header-logo">
+                    <img src="..\..\img\logo.jpg" />
+                    <p><a href="../../index.html">The Aichi Coffee</a></p>
+                </div>
+                <div class="header-menu">
+                    <button class="dropbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="./coffee.html">Cà phê</a>
+                        </li>
+                        <li>
+                            <a href="./tea.html">Trà</a>
+                        </li>
+                        <li class="dropdown">
+                            <div class="dropdown-btn">
+                                <a href="../menu.html"
+                                    >Menu<i class="fa fa-caret-down"></i
+                                ></a>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="./coffee.html">Cà phê</a>
+                                <a href="./tea.html">Trà</a>
+                                <a href="./juice.html"
+                                    >Nước ép/Sinh tố/Đá xay</a
+                                >
+                                <a href="./others.html">Khác</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Cửa hàng</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li id="cart">
+                            <a href="../cart/payment.html"
+                                ><i class="fa-solid fa-cart-shopping"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu-collection">
+            <div class="menu-container">
+                <div class="left">
+                    <h3>Danh mục sản phẩm</h3>
+                    <ul class="list-collection">
+                        <li>
+                            <a href="../menu.html">Tất cả</a>
+                        </li>
+                        <li>
+                            <a href="./coffee.html">Cà phê</a>
+                        </li>
+                        <li>
+                            <a href="./tea.html">Trà</a>
+                        </li>
+                        <li>
+                            <a href="./juice.html">Nước ép/Sinh tố/Đá xay</a>
+                        </li>
+                        <li>
+                            <a href="./others.html">Khác</a>
+                        </li>
+                    </ul>
+                    <div class="select-input">
+                        <select id="menu-list" name="section">
+                            <option value="all" id="all">Tất cả</option>
+                            <option value="coffee" id="coffee">Cà phê</option>
+                            <option value="tea" id="tea">Trà</option>
+                            <option value="juice" id="juice">
+                                Nước ép/Sinh tố/Đá xay
+                            </option>
+                            <option value="others" id="others" selected>
+                                Khác
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="others-list">
+                        <h2>Khác</h2>
+                        <div class="parent-4">
+                            <div class="div1-4">
+                                <img
+                                    src="..\..\img\matcha-sua.jpg"
+                                    alt="Cacao/Matcha sữa"
+                                />
+                                <p><b>Cacao/Matcha Sữa</b></p>
+                                <span>50.000 đ</span>
+                            </div>
+                            <div class="div2-4">
+                                <img
+                                    src="..\..\img\kho-bo-ga.jpg"
+                                    alt="Khô bò/gà/heo"
+                                />
+                                <p><b>Khô bò/gà/heo</b></p>
+                                <span>30.000 đ</span>
+                            </div>
+                            <div class="div3-4">
+                                <img
+                                    src="..\..\img\hat-huong-duong.jpg"
+                                    alt="Hướng dương"
+                                />
+                                <p><b>Hướng dương</b></p>
+                                <span>15.000 đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-info">
+                <h2>The Aichi Coffee</h2>
+                <p style="font-size: 16px">
+                    Đối diện VNPT đường Nguyễn Văn Huyên
+                    <br />
+                    kéo dài, Tây Hồ, Hà Nội
+                </p>
+            </div>
+            <div class="footer-menu">
+                <h2>Menu</h2>
+                <a href="./coffee.html">Cà phê</a>
+                <a href="./tea.html">Trà</a>
+                <a href="./juice.html">Nước ép/Sinh tố/Đá xay</a>
+                <a href="./others.html">Sản phẩm khác</a>
+            </div>
+            <div class="footer-contact">
+                <h2>Liên hệ</h2>
+                <div>
+                    <a href="https://www.facebook.com/Aichicoffee"
+                        ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+        <script src="user.js"></script>
+        <script src="../storage.js"></script>
+        <script src="others.js"></script>
+    </body>
+</html>

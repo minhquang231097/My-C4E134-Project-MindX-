@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <title>Home | The Aichi Coffee</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header-meta-list">
+                    <div class="header-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span
+                            >Đối diện VNPT đường Nguyễn Văn Huyên kéo dài, Tây
+                            Hồ, Hà Nội</span
+                        >
+                    </div>
+                    <div class="header-phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Hotline: 0938 051 369</span>
+                    </div>
+                    <div class="header-user">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="user">Đăng nhập</span>
+                    </div>
+                </div>
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <img src="img\logo.jpg" />
+                        <p><a href="./index.html">The Aichi Coffee</a></p>
+                    </div>
+                    <div class="header-menu">
+                        <button class="dropbtn">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="./pages/item-collection/coffee.html"
+                                    >Cà phê</a
+                                >
+                            </li>
+                            <li>
+                                <a href="./pages/item-collection/tea.html"
+                                    >Trà</a
+                                >
+                            </li>
+                            <li class="dropdown">
+                                <div class="dropdown-btn">
+                                    <a href="./pages/menu.html"
+                                        >Menu<i class="fa fa-caret-down"></i
+                                    ></a>
+                                </div>
+                                <div class="dropdown-content">
+                                    <a
+                                        href="./pages/item-collection/coffee.html"
+                                        >Cà phê</a
+                                    >
+                                    <a href="./pages/item-collection/tea.html"
+                                        >Trà</a
+                                    >
+                                    <a href="./pages/item-collection/juice.html"
+                                        >Nước ép/Sinh tố/Đá xay</a
+                                    >
+                                    <a
+                                        href="./pages/item-collection/others.html"
+                                        >Khác</a
+                                    >
+                                </div>
+                            </li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Cửa hàng</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li id="cart">
+                                <a href="./pages/cart/payment.html"
+                                    ><i class="fa-solid fa-cart-shopping"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img class="img-home" src="img\slide-1.jpg" />
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img
+                        class="image"
+                        src="img\slide-1.jpg"
+                        style="width: 100%"
+                    />
+                </div>
+                <div class="mySlides fade">
+                    <img
+                        class="image"
+                        src="img\slide-2.jpg"
+                        style="width: 100%"
+                    />
+                </div>
+                <div class="mySlides fade">
+                    <img
+                        class="image"
+                        src="img\slide-3.jpg"
+                        style="width: 100%"
+                    />
+                </div>
+                <div class="mySlides fade">
+                    <img
+                        class="image"
+                        src="img\slide-4.jpg"
+                        style="width: 100%"
+                    />
+                </div>
+                <div class="mySlides fade">
+                    <img
+                        class="image"
+                        src="img\slide-5.jpg"
+                        style="width: 100%"
+                    />
+                </div>
+                <a class="prev" onclick="prevSlide()">&#10094;</a>
+                <a class="next" onclick="showSlides()">&#10095;</a>
+            </div>
+            <br />
+            <div
+                class="dot-container"
+                style="text-align: center; padding: 10px 0 20px"
+            >
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="menu-list-home">
+            <h2>Sản phẩm nổi bật</h2>
+            <div class="menu-list-container">
+                <div class="div1">
+                    <a href="pages\product\product-1.html">
+                        <img src="img\ca_phe_den.webp" alt="Cà phê đen"
+                    /></a>
+                    <p><b>Cà phê đen</b></p>
+                    <span>35.000 đ</span>
+                </div>
+                <div class="div2">
+                    <a href="pages\product\product-2.html"
+                        ><img src="img\ca-phe-nau.jpg" alt="Cà phê nâu"
+                    /></a>
+                    <p><b>Cà phê nâu</b></p>
+                    <span>38.000 đ</span>
+                </div>
+                <div class="div3">
+                    <a href="pages\product\product-5.html"
+                        ><img src="img\tra-olong-sua.jpg" alt="Ô Long sữa"
+                    /></a>
+                    <p><b>Ô long sữa</b></p>
+                    <span>40.000 đ</span>
+                </div>
+                <div class="div4">
+                    <a href="pages\product\product-10.html">
+                        <img
+                            src="img\Tra-dau-chanh-vang.jpg"
+                            alt="Trà dâu chanh vàng"
+                        />
+                    </a>
+                    <p><b>Trà dâu chanh vàng</b></p>
+                    <span>50.000 đ</span>
+                </div>
+                <div class="div5">
+                    <a href="pages\product\product-14.html">
+                        <img
+                            src="img\chanh-vang-mat-ong.jpg"
+                            alt="Chanh vàng mật ong"
+                        />
+                    </a>
+                    <p><b>Chanh vàng mật ong</b></p>
+                    <span>45.000 đ</span>
+                </div>
+                <div class="div6">
+                    <a href="pages\product\product-18.html">
+                        <img
+                            src="img\sinh-to-viet-quat.jpg"
+                            alt="Sữa chua việt quất"
+                        />
+                    </a>
+                    <p><b>Sữa chua việt quất</b></p>
+                    <span>50.000 đ</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-info">
+                <h2>The Aichi Coffee</h2>
+                <p>
+                    Đối diện VNPT đường Nguyễn Văn Huyên
+                    <br />
+                    kéo dài, Tây Hồ, Hà Nội
+                </p>
+            </div>
+            <div class="footer-menu">
+                <h2>Menu</h2>
+                <a href="./pages/item-collection/coffee.html">Cà phê</a>
+                <a href="./pages/item-collection/tea.html">Trà</a>
+                <a href="./pages/item-collection/juice.html"
+                    >Nước ép/Sinh tố/Đá xay</a
+                >
+                <a href="./pages/item-collection/others.html">Sản phẩm khác</a>
+            </div>
+            <div class="footer-contact">
+                <h2>Liên hệ</h2>
+                <div>
+                    <a href="https://www.facebook.com/Aichicoffee"
+                        ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+        <script src="user.js"></script>
+        <script src="pages/storage.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
